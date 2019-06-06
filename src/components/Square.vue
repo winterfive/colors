@@ -5,6 +5,7 @@
         <v-icon>home</v-icon>
         <v-icon>event</v-icon>
         <v-icon>info</v-icon>
+        <v-icon>folder</v-icon>
       </span>
     </v-layout>
   </v-container>
