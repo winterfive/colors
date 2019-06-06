@@ -2,10 +2,9 @@
   <v-container fluid>
     <v-layout justify-space-around class="mb-2">
       <span class="group pa-2">
-        <v-icon>home</v-icon>
-        <v-icon>event</v-icon>
-        <v-icon>info</v-icon>
-        <v-icon>folder</v-icon>
+        <v-icon class="material-icons theme--light">person</v-icon>
+        <v-icon class="material-icons theme--light">grade</v-icon>
+        <v-icon class="material-icons theme--light" small>folder</v-icon>
       </span>
     </v-layout>
   </v-container>
