@@ -12,7 +12,13 @@ export default {
 <style lang="scss" scoped>
 
   .square {
-    width: 300px;
-    height: 300px;
-  }
+  width: 50%;
+  background-color: red;
+}
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
 </style>
