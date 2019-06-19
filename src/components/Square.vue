@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  // get selected colors from nav and apply to square
+  // get selected colors from store and apply to square
 }
 </script>
 

@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>two sliders</h2>
+        <h2>Add two color sliders</h2>
     </div>
 </template>
 

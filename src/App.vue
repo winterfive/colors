@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <nav-bar/>
-    <Square/><Square/>
+<!--     Fill screen w/ squares
+ -->    <Square/><Square/>
   </div>
 </template>
 
