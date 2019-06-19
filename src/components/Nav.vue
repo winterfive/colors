@@ -27,6 +27,7 @@
         max="20"
         ticks="always"
         tick-size="4"
+        thumb-color="red"
       >
         <template v-slot:thumb-label="props">
         </template>
