@@ -21,5 +21,6 @@ export default {
   content: "";
   display: block;
   padding-bottom: 100%;
+  margin: 2px;
 }
 </style>
