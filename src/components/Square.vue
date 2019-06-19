@@ -1,18 +1,19 @@
 <template>
   <div>
-    <div class="square" color="blue"></div>
+    <div class="square"></div>
     </div>  
 </template>
 
 <script>
 export default {
+  // get selected colors from nav and apply to square
 }
 </script>
 
 <style lang="scss" scoped>
 
   .square {
-  width: 50%;
+  width: 10%;
   background-color: red;
 }
 
