@@ -5,10 +5,11 @@ import Vuetify from 'vuetify'
 
 Vue.config.productionTip = false
 
+Vue.use(Vuetify, {
+  iconfont: 'md'
+})
+
 new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-Vue.use(Vuetify, {
-  iconfont: 'md'
-})
