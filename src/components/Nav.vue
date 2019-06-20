@@ -2,22 +2,22 @@
   export default {
     computed: {
       color () {
-        if (this.value === 1) return 'indigo'
-        if (this.value === 2) return 'teal'
-        if (this.value === 3) return 'green'
-        if (this.value === 4) return 'orange'
+        if (this.tickValue === 1) return 'indigo'
+        if (this.tickValue === 2) return 'teal'
+        if (this.tickValue === 3) return 'green'
+        if (this.tickValue === 4) return 'orange'
         return 'red'
-      }
+      },
+      tickValue: 0
   }
-  }
+}
 </script>
 
 <template>
     <v-layout>
       <v-flex pa-5>
         <v-range-slider
-          v-model="value"
-          :rules = "rules"
+          v-model="tickValue"
           min="0"
           max="20"
           ticks
