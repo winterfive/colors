@@ -1,30 +1,26 @@
 <template>
-  <div id="app">
-    <nav-bar/>
-    <Square/>
-  </div>
+  <v-app>
+    <v-content>
+      <Nav/>
+      <Square/>
+    </v-content>
+  </v-app>
 </template>
 
 <script>
-import Square from './components/Square.vue'
-import NavBar from './components/NavBar.vue'
+import Nav from './components/Nav'
+import Square from './components/Square'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    NavBar,
+    Nav,
     Square
+  },
+  data () {
+    return {
+      //
+    }
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: blue;
-  margin-top: 60px;
-}
-</style>

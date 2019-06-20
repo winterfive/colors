@@ -1,33 +1,26 @@
 <template>
-  <v-container fluid>
-    <v-layout justify-space-around class="mb-2">
-      <span class="group pa-2">
-        <v-icon class="material-icons theme--light">person</v-icon>
-        <v-icon class="material-icons theme--light">grade</v-icon>
-        <v-icon class="material-icons theme--light" small>folder</v-icon>
-      </span>
-    </v-layout>
-  </v-container>
+  <div>
+    <div class="square"></div>
+    </div>  
 </template>
 
 <script>
 export default {
+  // get selected colors from store and apply to square
 }
 </script>
 
-<style scoped>
-h3 {
-  margin: 40px 0 0;
+<style lang="scss" scoped>
+
+  .square {
+  width: 10%;
+  background-color: red;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.square:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+  margin: 2px;
 }
 </style>
