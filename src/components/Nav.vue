@@ -1,21 +1,11 @@
 <script>
   export default {
-    data: () => ({
-      colors: [
-        { color:'Red', red: '255', green:'0', blue:'0'},
-        { color: 'Red-Orange', red:'254', green:'97', blue:'1'},
-        { color: 'Orange', value:'254,147,1'},
-      ],
-      rules: [
-        v => v === 3
-      ]
-    }),
     computed: {
       color () {
-        if (this.value < 100) return 'indigo'
-        if (this.value < 125) return 'teal'
-        if (this.value < 140) return 'green'
-        if (this.value < 175) return 'orange'
+        if (this.value === 1) return 'indigo'
+        if (this.value === 2) return 'teal'
+        if (this.value === 3) return 'green'
+        if (this.value === 4) return 'orange'
         return 'red'
       }
   }
@@ -35,8 +25,6 @@
           :color="color"
           always dirty
         >
-          <template v-slot:thumb-label="props">
-          </template>
         </v-range-slider>
       </v-flex>
     </v-layout>
