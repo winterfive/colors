@@ -15,8 +15,8 @@
       consoleLog() {
         // eslint-disable-next-line no-console
         console.log("value: " + this.value);
-      }      
-    }       
+      }
+    }
   }
 </script>
 
@@ -41,5 +41,3 @@
 <style lang="scss" scoped>
 
 </style>
-
-
