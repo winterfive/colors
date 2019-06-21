@@ -1,27 +1,22 @@
 <script>
   export default {
-    computed: {
-      color () {
-        this.value.forEach(v => {
-          if (v === 1) return 'indigo'
-          if (v === 2) return 'teal'
-          if (v === 3) return 'green'
-          if (v === 4) return 'orange'
-          return 'red';         
-        }        
-      },
-    },
+    data() {
+      return {
+        value: [2,3],
+        color: ['blue', 'green']
+      }
+    }, 
     methods: {
+      color() {
+        this.value.forEach(v => {
+          // switch statement        
+        }
+      },
       consoleLog() {
         // eslint-disable-next-line no-console
         console.log("value: " + this.value);
-      }
-    },
-    data() {
-      return {
-        value: [2,3]
-      }
-    }
+      }      
+    }       
   }
 </script>
 
