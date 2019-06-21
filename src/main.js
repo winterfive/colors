@@ -1,12 +1,11 @@
 import Vue from 'vue'
-import './plugins/vuetify'
 import App from './App.vue'
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import { store } from "./store";
-
-Vue.config.productionTip = false
+import './plugins/vuetify'
+import { store } from "./store"
+import { Photoshop } from 'vue-color'
 
 Vue.use(Vuetify, {
   iconfont: 'md'
@@ -14,6 +13,7 @@ Vue.use(Vuetify, {
 
 new Vue({
   store,
+  'photoshop-picker': Photoshop,
   render: h => h(App),
 }).$mount('#app')
 
