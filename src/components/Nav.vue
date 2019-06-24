@@ -1,41 +1,37 @@
 <script>
+
+var colors = '#194d33'
+
   export default {
-    computed: {
-      color () {
-        if (this.tickValue === 1) return 'indigo'
-        if (this.tickValue === 2) return 'teal'
-        if (this.tickValue === 3) return 'green'
-        if (this.tickValue === 4) return 'orange'
-        return 'red'
-      },
-      tickValue: 0
-  }
+  data() {
+    return {
+      colors
+    }
+  },
+  methods: {}
 }
 </script>
 
 <template>
-    <v-layout>
-      <v-flex pa-5>
-        <v-range-slider
-          v-model="tickValue"
-          min="0"
-          max="20"
-          ticks
-          tick-size="10"
-          :color="color"
-          always dirty
-        >
-        </v-range-slider>
-      </v-flex>
-    </v-layout>
+<v-container>
+  <v-layout>
+    <v-flex>
+      <compact-picker v-model="colors" class="picker" />
+      <div>
+        <v-btn color="success">Success</v-btn>
+        <v-btn color="error">Error</v-btn>
+        <v-btn color="warning">Warning</v-btn>
+        <v-btn color="info">Info</v-btn>
+      </div>
+    </v-flex>
+  </v-layout>
+</v-container>
+  
 </template>
 
 <style lang="scss" scoped>
-.e4 {
-width: 400px;
-margin: auto;
+
+.picker {
+  width: 500px;
 }
-
 </style>
-
-
