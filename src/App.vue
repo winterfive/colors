@@ -2,20 +2,20 @@
   <v-app>
     <v-content>
       <Nav/>
-      <Square/>
+      <Squares/>
     </v-content>
   </v-app>
 </template>
 
 <script>
 import Nav from './components/Nav'
-import Square from './components/Square'
+import Squares from './components/Squares'
 
 export default {
   name: 'App',
   components: {
     Nav,
-    Square
+    Squares
   },
   data () {
     return {
